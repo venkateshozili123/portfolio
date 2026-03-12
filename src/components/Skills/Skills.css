@@ -1,0 +1,132 @@
+.skills {
+  position: relative;
+  background: var(--bg-accent);
+}
+
+.skills__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.skills__label {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accent-cyan);
+  margin-bottom: 1rem;
+}
+
+.skills__title {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.skills__title-line {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.skills__category {
+  padding: 2rem;
+  transition: all 0.4s ease;
+}
+
+.skills__category:hover {
+  transform: translateY(-8px);
+  border-color: rgba(124, 58, 237, 0.3);
+  box-shadow: 0 15px 40px rgba(124, 58, 237, 0.15);
+}
+
+.skills__category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skills__category-icon {
+  font-size: 1.8rem;
+}
+
+.skills__category-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.skills__item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skills__item-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.skills__item-percent {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+}
+
+.skills__bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skills__bar-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+  border-radius: 3px;
+  animation: fillBar 1.5s ease forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes fillBar {
+  to {
+    width: var(--fill-width, 0%);
+  }
+}
+
+@media (max-width: 968px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills__title {
+    font-size: 2rem;
+  }
+
+  .skills__category {
+    padding: 1.5rem;
+  }
+}
