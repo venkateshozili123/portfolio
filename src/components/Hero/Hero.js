@@ -113,7 +113,7 @@ const Hero = () => {
         <div className="hero__visual">
           <div className="hero__image-wrapper">
             <div className="hero__image-border"></div>
-            <img src="/profile.jpg" alt="Ozili Venkatesh - Developer" className="hero__image" />
+            <img src={process.env.PUBLIC_URL + '/profile.jpg'} alt="Ozili Venkatesh - Developer" className="hero__image" />
             <div className="hero__image-glow"></div>
           </div>
 
