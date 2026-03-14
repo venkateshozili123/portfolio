@@ -84,30 +84,10 @@ const Hero = () => {
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
-            <a href="#contact" className="hero__btn hero__btn--secondary" onClick={(e) => {
-              e.preventDefault();
-              document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
-            }}>
-              <span>Get In Touch</span>
-            </a>
+
           </div>
 
-          <div className="hero__stats">
-            <div className="hero__stat">
-              <span className="hero__stat-number">10+</span>
-              <span className="hero__stat-label">Projects</span>
-            </div>
-            <div className="hero__stat-divider"></div>
-            <div className="hero__stat">
-              <span className="hero__stat-number">2+</span>
-              <span className="hero__stat-label">Years Exp</span>
-            </div>
-            <div className="hero__stat-divider"></div>
-            <div className="hero__stat">
-              <span className="hero__stat-number">5+</span>
-              <span className="hero__stat-label">Technologies</span>
-            </div>
-          </div>
+
         </div>
 
         <div className="hero__visual">

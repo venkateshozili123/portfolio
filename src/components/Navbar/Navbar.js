@@ -17,7 +17,6 @@ const Navbar = () => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
   ];
 
   const handleNavClick = (e, href) => {
@@ -61,9 +60,8 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="#contact"
+              href="mailto:venkateshozili186@gmail.com"
               className="navbar__cta"
-              onClick={(e) => handleNavClick(e, '#contact')}
             >
               Hire Me
             </a>
